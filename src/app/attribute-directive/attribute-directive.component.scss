@@ -1,0 +1,26 @@
+
+
+  .center{
+    display: flex;
+    padding-top: 20%;
+    flex-direction: column;
+    gap:100px;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .default{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  }
+
+  .highlight {
+    background-color: sandybrown;
+    font-size: 17px;
+    font-family: Verdana;
+  }
+   
+  .underline {
+    text-decoration: underline;
+    font-family: Verdana;
+  }

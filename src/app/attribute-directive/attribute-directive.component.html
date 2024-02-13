@@ -1,0 +1,23 @@
+<!-- <div class="center">
+
+<div [ngStyle]="{ 'background-color': isHighlighted ? 'yellow' : 'transparent', 'font-size': fontSize + 'px' }">
+    This div's background color and font size are controlled by ngStyle.
+</div>
+   <div>
+  <button (click)="toggleHighlight()">Toggle Highlight</button>
+  <button (click)="increaseFontSize()">Increase Font Size</button>
+</div>
+
+</div> -->
+
+
+<!-- [ngClass] Example -->
+
+<div class="center">
+<div class="default" [ngClass]="{ 'highlight': isHighlighted, 'underline': isUnderlined }">
+    This div's classes are controlled by ngClass.
+  </div>
+   
+  <button (click)="isHighlighted = !isHighlighted">Toggle Highlight</button>
+  <button (click)="isUnderlined = !isUnderlined">Toggle Underline</button>
+  </div>
