@@ -6,10 +6,19 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RoleGuard implements CanActivateChild {
+  userRole = 'admin';
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    state: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
+    if (this.userRole !== 'admin') {
+      alert("You don't have access");
+      return false;
+    }
     return true;
   }
-  
 }

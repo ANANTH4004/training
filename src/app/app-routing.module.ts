@@ -22,7 +22,7 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent,
     canActivateChild: [ RoleGuard ],
-    children: [{ path: 'edit', component: EditAboutComponent }],
+    children: [{ path: 'edit', component: EditAboutComponent  }],
   },
   {
     path: 'products',
@@ -34,7 +34,7 @@ const routes: Routes = [
     component: ContactComponent,
     canDeactivate: [NotCompleteGuard]
   },
-  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard]  },
+  { path: 'admin', component: AdminComponent , canActivate :[AuthGuard] },
   {
     path: 'offers',
     canLoad: [ModuleGuard],
