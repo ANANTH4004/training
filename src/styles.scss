@@ -1,20 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+// /* You can add global styles to this file, and also import other style files */
+// @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "Poppins", sans-serif;
+// }
+
+// .main {
+//   width: 100vw;
+//   height: calc(50vh - 80px);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 40px;
+//   font-weight: bold;
+//   color: purple;
+// }
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f3ccfa;
+  height: 95vh;
 }
 
-.main {
-  width: 100vw;
-  height: calc(50vh - 80px);
+.form-container {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px;
+  color: darkviolet;
+}
+
+.form-group {
+  margin: 30px 0px;
+}
+
+.d-flex {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: purple;
+  justify-content: space-between;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 15px;
 }

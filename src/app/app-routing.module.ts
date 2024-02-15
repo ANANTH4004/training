@@ -14,10 +14,11 @@ import { NotCompleteGuard } from './services/not-complete.guard';
 
 import { RoleGuard } from './services/role.guard';
 import { ResolveGuard } from './services/resolve.guard';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: ReactiveFormsComponent },
   {
     path: 'about',
     component: AboutComponent,
