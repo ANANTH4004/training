@@ -8,26 +8,28 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ReactiveFormsComponent {
   myForm!: FormGroup;
-
   constructor() { }
 
   ngOnInit(): void {
     this.myForm = new FormGroup(
       {
-        uname: new FormControl('Surender', Validators.required),
-        email: new FormControl(null, [Validators.required, Validators.email]),
+        uname: new FormControl('', Validators.required),
+        email: new FormControl(null, [Validators.required, Validators.email ]),
         readTerms: new FormControl(false)
       }
     );
   }
 
   onSubmit() {
-    this.myForm.reset();
+    console.log('Form Submitted' , this.myForm)
+   // this.myForm.reset();
   }
 
   accept() {
     this.myForm.patchValue({
-      readTerms: true
-    });
+    email:"varun@gmail.com",
+      uname :"varun",
+   
+    });                                                                                   
   }
 }
